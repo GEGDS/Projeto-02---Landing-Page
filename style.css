@@ -1,16 +1,44 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
+
+
+
+:root {
+    --cor1: #3470BF;
+    --cor2: #F2CB05;
+    --cor3: #F2B705;
+    --cor4: #D98E04;
+    --cor5: #F2F2F2;
+
+
+    --font1: 'Sriracha', cursive;
+    --font2: 'Hind Madurai', sans-serif;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-color: var(--cor3);
+    font-family: var(--font2);
+}
+
 header {
     min-height: 150px;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
+    background-color: var(--cor1);
+    
 }
 
 header h1 {
-    color: #94C1FF;
+    font-family: var(--font1);
+    color: var(--cor5);
     margin-bottom: 15px;
     font-size: 3em;
     text-shadow: 2px 2px 0px #00000083;
@@ -18,6 +46,9 @@ header h1 {
 
 header p {
     font-size: 1.2em;
+    font-weight: bolder;
+    color: var(--cor5);
+    padding-bottom: 10px;
 }
 
 header p span.grama {
@@ -48,6 +79,16 @@ nav {
     padding-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--cor2);
+}
+
+nav a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -56,10 +97,9 @@ main {
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+    background-color: var(--cor5);
 }
 
 main section h2 {
@@ -78,7 +118,7 @@ main section img{
 }
 
 aside {
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.432);
@@ -95,13 +135,20 @@ aside p {
 aside .btn {
     height: 35px;
     width: 90px;
-    background-color: whitesmoke;
+    border-radius: 10em;
+    background-color: var(--cor5);
+}
+
+aside button:hover {
+    background-color: var(--cor4);
 }
 
 footer {
     text-align: center;
     font-size: 1.2em;
+    font-weight: bolder;
     padding: 5px;
+    background-color: var(--cor4);
 }
 
 footer a {
